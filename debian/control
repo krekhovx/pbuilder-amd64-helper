@@ -5,7 +5,7 @@ Maintainer: Kirill Rekhov <krekhov.dev@gmail.com>
 Rules-Requires-Root: no
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.2
-Homepage: https://github.com/iikrllx/chroot-debianizer
+Homepage: https://github.com/krekhovx/chroot-debianizer
 
 Package: chroot-debianizer
 Architecture: all

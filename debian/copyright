@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Source: https://github.com/iikrllx/chroot-debianizer
+Source: https://github.com/krekhovx/chroot-debianizer
 Upstream-Name: chroot-debianizer
 Upstream-Contact: Kirill Rekhov <krekhov.dev@gmail.com>
 
