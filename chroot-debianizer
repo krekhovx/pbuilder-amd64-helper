@@ -129,7 +129,7 @@ echo "$user ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 for loc in en_US.UTF-8 ru_RU.UTF-8; do
 	if ! grep ^$loc /etc/locale.gen &>/dev/null; then
-		echo "$loc UTF-8" | sudo tee -a /etc/locale.gen
+		echo "$loc UTF-8" | tee -a /etc/locale.gen
 		locale-gen
 	fi
 done
@@ -185,7 +185,6 @@ vtouch()
         [ $? == 0 ] && echo "touched: '$i'"
     done
 } && alias touch='vtouch'
-
 INNER_EOF
 
 mkdir /home/$user/sources
