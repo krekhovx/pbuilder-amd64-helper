@@ -135,7 +135,8 @@ for loc in en_US.UTF-8 ru_RU.UTF-8; do
 done
 
 # enable bash completion
-perl -i -pe '$i++ if /^#if ! shopt -oq posix;/; s/^#// if $i==1; $i=0 if /^fi/' /etc/bash.bashrc
+perl -i -pe '$i++ if /^#if ! shopt -oq posix;/; s/^#// if $i==1; $i=0 if /^fi/' \
+/etc/bash.bashrc
 
 # add suite to prompt
 echo $1 > /etc/debian_chroot
@@ -151,40 +152,9 @@ cat << \INNER_EOF >> /home/$user/.bashrc
 export LANG=en_US.UTF8
 export LC_ALL=en_US.UTF-8
 export EDITOR='/usr/bin/vim'
-export HISTCONTROL=ignoredups
-export DEBEMAIL=krekhov.dev@gmail.com
 export DEBFULLNAME="Kirill Rekhov"
-
-alias cc='xsel -p -c; xsel -b -c' # clear primary/clipboard selections
-alias daterc='date -R | xsel -b -i' # input date (RFC 5322) to clipboard (for changelog)
-alias _date='date +"%d/%m/%Y - %H:%M:%S"' # simple format
-alias ls='ls -1 --group-directories-first -N --color=auto'
-alias ll='ls -1l --group-directories-first -hN --color=auto'
-alias la='ls -A --color=auto'
-alias lla='ls -lA --group-directories-first -hN --color=auto'
-alias v='vim'
-alias vf='vifm'
-alias c='cd ~/'
-alias s='cd ~/sources'
-alias a='sudo aptitude'
-alias brc='vim ~/.bashrc'
-alias grep='grep --color=auto'
-alias diff='diff --color=auto'
-alias sl='sudo vim /etc/apt/sources.list'
-alias rm='rm -v'
-alias cp='cp -vi'
-alias mv='mv -vi'
-alias mkdir='mkdir -v'
-alias rcd='cd $(mktemp -d)'
-
-# touch file with verbose mode
-vtouch()
-{
-    for i do
-        touch "$i"
-        [ $? == 0 ] && echo "touched: '$i'"
-    done
-} && alias touch='vtouch'
+export DEBEMAIL=krekhov.dev@gmail.com
+HISTCONTROL=ignoreboth:erasedups
 INNER_EOF
 
 mkdir /home/$user/sources
