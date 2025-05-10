@@ -1,13 +1,13 @@
-Source: chroot-debianizer
+Source: pbuilder-amd64-helper
 Section: utils
 Priority: optional
 Maintainer: Kirill Rekhov <krekhov.dev@gmail.com>
 Rules-Requires-Root: no
 Build-Depends: debhelper-compat (= 13)
-Standards-Version: 4.7.0
-Homepage: https://github.com/krekhovx/chroot-debianizer
+Standards-Version: 4.7.2
+Homepage: https://github.com/krekhovx/pbuilder-amd64-helper
 
-Package: chroot-debianizer
+Package: pbuilder-amd64-helper
 Architecture: all
 Depends: ${misc:Depends},
          pbuilder,
@@ -15,6 +15,7 @@ Depends: ${misc:Depends},
          blhc,
          duck,
          lintian,
+         lintian-brush,
          devscripts,
          licensecheck,
          licenserecon

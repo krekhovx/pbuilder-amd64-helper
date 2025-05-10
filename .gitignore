@@ -1,5 +1,5 @@
 debian/.debhelper/
-debian/chroot-debianizer.substvars
-debian/chroot-debianizer/
+debian/pbuilder-amd64-helper.substvars
+debian/pbuilder-amd64-helper/
 debian/debhelper-build-stamp
 debian/files

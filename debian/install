@@ -1,1 +1,1 @@
-chroot-debianizer /usr/sbin
+pbuilder-amd64-helper /usr/sbin

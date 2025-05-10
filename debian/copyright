@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Source: https://github.com/krekhovx/chroot-debianizer
-Upstream-Name: chroot-debianizer
+Source: https://github.com/krekhovx/pbuilder-amd64-helper
+Upstream-Name: pbuilder-amd64-helper
 Upstream-Contact: Kirill Rekhov <krekhov.dev@gmail.com>
 
 Files: *

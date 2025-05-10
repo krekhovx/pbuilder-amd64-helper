@@ -1,6 +1,6 @@
-Bug-Database: https://github.com/krekhovx/chroot-debianizer/issues
-Bug-Submit: https://github.com/krekhovx/chroot-debianizer/issues/new
-Changelog: https://github.com/krekhovx/chroot-debianizer/commits/master/
-Documentation: https://github.com/krekhovx/chroot-debianizer/wiki
-Repository-Browse: https://github.com/krekhovx/chroot-debianizer
-Repository: https://github.com/krekhovx/chroot-debianizer.git
+Bug-Database: https://github.com/krekhovx/pbuilder-amd64-helper/issues
+Bug-Submit: https://github.com/krekhovx/pbuilder-amd64-helper/issues/new
+Changelog: https://github.com/krekhovx/pbuilder-amd64-helper/commits/master/
+Documentation: https://github.com/krekhovx/pbuilder-amd64-helper/wiki
+Repository-Browse: https://github.com/krekhovx/pbuilder-amd64-helper
+Repository: https://github.com/krekhovx/pbuilder-amd64-helper.git
