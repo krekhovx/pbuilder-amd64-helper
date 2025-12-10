@@ -19,7 +19,8 @@ $ sudo apt install -y ./pbuilder-amd64-helper_1.0.0-1_all.deb
 
 ## Examples
 NOTE: Scripts such as ```pbuilder-amd64-helper``` and ```deb-checks.sh``` are
-executed with superuser rights.
+executed with superuser rights. In the chroot environment you can work under the
+`builder` user (password: `1`), which is created automatically by the script.
 
 Usage information:
 ```
