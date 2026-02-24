@@ -94,7 +94,7 @@ From another terminal, copy files to the chroot:
 $ cp -r /var/cache/pbuilder/result/last/* /var/cache/pbuilder/build/<pid>/home/builder/sources/
 ```
 
-Return to the original terminal and run additional checks:
+Return to the original terminal and run additional checks (pre-CI):
 ```
 $ cd sources/<my-last-build>
 $ deb-checks.sh
